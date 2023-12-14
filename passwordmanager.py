@@ -4,7 +4,7 @@ import sys
 import hashlib
 import getpass
 
-key = "d0e317465e29b1b19fa8ad3dcdef2f2d63130e3d7ab4f78ed2484022ee1e19a0"  # SHA-256 hashed password
+key = "d0e317465e29b1b19fa8ad3dcdef2f2d63130e3d7ab4f78ed2484022ee1e19a0"  # SHA-256 hashed master key
 
 with open("private.pem", "rb") as f:
     private_key = rsa.PrivateKey.load_pkcs1(f.read())
